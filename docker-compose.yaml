@@ -16,7 +16,7 @@ services:
 
     container_name: catalogue
     depends_on:
-    - mongodb
+      - mongodb
 
   web:
     image: web:v1
@@ -25,11 +25,11 @@ services:
     ports:
       - "80:80"
     depends_on:
-    - catalogue
-    - cart
-    - user
-    - shipping
-    - payment
+      - catalogue
+      - cart
+      - user
+      - shipping
+      - payment
   
   redis:
     image: redis
