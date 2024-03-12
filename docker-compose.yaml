@@ -32,7 +32,7 @@ services:
     - payment
   
   redis:
-    image: redis:v1
+    image: redis
 
     container_name: redis
 
@@ -65,7 +65,7 @@ services:
       - mysql
 
   rabbitmq:
-    image: rabbitmq:v1
+    image: rabbitmq
 
     container_name: rabbitmq
     environment:
